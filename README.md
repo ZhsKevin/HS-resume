@@ -181,16 +181,40 @@ $theme-color: #126ab8;
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210220161653630.png)
 
-回到项目输入 npm run pub 命令，会自动创建一个 gh-pages 分支并推送到你fork的 GitHub 的仓库。
-（如果有什么启动不了的错误是环境问题，可以尝试回到项目，在命令行中先输入cnpm install cross-env再输入 npm run pub 命令）
+#### 1 页面托管部署（GitHubpages+域名解析）
 
-打开上面 Fork 的仓库地址，点击设置，往下滑动到 `GitHub Pages` 设置选项，将分支选择为 `gh-pages`。此时上面的网站就是我说的设置域名，如果你没有设置域名则这个地方应该是https://yourname.github.io/MyResume/ 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210220162159376.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poczI2MDEzMzE3Mg==,size_16,color_FFFFFF,t_70)
+1. 项目部署前，需要先在 GitHub 仓库中建立一个名为 `username.github.io` 的仓库，其中 `username` 是你的 GitHub 账户名称。这个仓库可以生成一个域名，你可以在这个域名下创建仓库，将一些静态内容资源托管到上面，比如自己的博客。
+2. 回到项目输入 `npm run pub` 命令，会自动创建一个 gh-pages 分支并推送到你fork的 GitHub 的仓库。（如果有什么启动不了的错误是环境问题，可以尝试回到项目，在命令行中先输入`npm install cross-env`再输入 `npm run pub` 命令）
+3. 打开上面 Fork 的仓库地址，点击设置，往下滑动到 `GitHub Pages` 设置选项，将分支选择为 `gh-pages`。此时上面的网站就是我说的设置域名，如果你没有设置域名则这个地方应该是https://yourname.github.io/MyResume/ 
+   ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210220162159376.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poczI2MDEzMzE3Mg==,size_16,color_FFFFFF,t_70)
+4. 然后打开生成的网页即可看到在线的简历，将链接发给其他人，其他人通过浏览器打开可以直接访问
+5. 使用快捷键 `ctrl+p` 或者 `command+p` 调用浏览器的打印功能，可以将简历导出为 pdf 格式的文件。
+
+#### 2 云应用部署（云对象存储+域名解析）
+
+###### 如果觉得同步太麻烦而且访问速度慢，不想使用GitHub pages。也可使用域名解析+云存储实现静态网页展示（我就是用的这种方式）
+
+###### 	以阿里云为例       
+
+1. 项目部署前，需要先在阿里云购买一个OOS对象存储服务（一年九块钱真不贵），新建一个Bucket，设置为公共读私有写，别的额外收费的服务都不用开通。
+
+2. 左侧选项传输管理中选择域名管理，添加你自己的域名，去域名解析页面解析到这个bucket的外网地址，如果有SSL证书可以上传一下SSL证书绑定HTTPS页面（这样不提示不安全，更好看一点）
+
+3. 回到项目目录，管理员身份运行命令行，先输入`npm install cross-env`再输入 `npm run build` 命令。
+
+4. 运行完成后，在项目目录会生成几个文件
+
+   ![image-20210311140641214](C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20210311140641214.png)
+
+5. 把这几个文件全部上传到bucket中去。
+
+6. 回到bucket页面点击左侧基础设施-静态页面，选择首页为index.html即可
+
+7. 然后打开生成的网页即可看到在线的简历，将链接发给其他人，其他人通过浏览器打开可以直接访问
+
+8. 使用快捷键 `ctrl+p` 或者 `command+p` 调用浏览器的打印功能，可以将简历导出为 pdf 格式的文件。
 
 
-然后打开刚才显示的网页即可看到在线的简历，将链接发给其他人，其他人通过浏览器打开可以直接访问
-
-使用快捷键 `ctrl+p` 或者 `command+p` 调用浏览器的打印功能，可以将简历导出为 pdf 格式的文件。
 
 
 希望大家都能找到满意的工作!
