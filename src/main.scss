@@ -367,14 +367,21 @@ a {
 
 .file-col {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: row ;
+  //justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-}
+  &:before, &:after {
+    content: '';
+    display: block;
+  }
+  }
 
 .file-col-image {
-  width: 200px;
-  height: 200px;
+  width:60%;
+  height:60%;
+  //width: 200px;
+  //height: 200px;
 }
 
 figure {
