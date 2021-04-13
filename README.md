@@ -1,4 +1,10 @@
-**Resume**---
+# H&S简历
+<<<<<<< HEAD
+=======
+
+## 一份优雅简约的在线简历
+
+>>>>>>> 2dc6e7091fcf10fd30574b8461d8add0e53ad3fb
 
 ## 一份优雅简约的在线简历
 
@@ -6,22 +12,21 @@
 - 自适应屏幕兼容移动端
 - 支持部署到ghpages，可在线浏览
 - 自动生成 PDF，全自动化流程
-- 欢迎Star
 - 提示：本项目如果npm用不了就使用淘宝镜像源cnpm命令，具体方法百度即可
 
 ## 1.修改项目
-1. 项目依赖于 Node 环境，你需要先到 Node 官网[2] 下载并安装对应系统的 Node 程序。安装好后，在命令行输入 node -v，如果出现相应的版本号，说明 Node 环境安装成功。
+1. 项目依赖于 Node 环境，你需要先到 [Node](https://nodejs.org/en/) 官网下载并安装对应系统的 Node 程序。安装好后，在命令行输入 node -v，如果出现相应的版本号，说明 Node 环境安装成功。
 
 2. fork本项目后再使用Git工具Clone到本地修改。
 
 3. 使用 CD 命令进入到项目目录，输入`npm install`命令，安装程序所使用的依赖环境。
 
-4. 再输入 `npm run dev` 命令，项目会进行编译，并自动打开浏览器，加载出简历的页面。
+4. 再输入 `npm run dev` 命令，项目会进行编译，并自动打开浏览器，加载出简历的页面，或者直接点http://localhost:8080/。
 
 5. 打开编辑器对简历内容进行修改。
 
 5. 项目的整体目录结构如下：
-            
+
             `├── README.md
                 ├── node_modules
                 ├── package-lock.json
@@ -31,7 +36,7 @@
                 ├── webpack-dist.config.js
                 ├── webpack.config.js
                 └── webpack.js`
-        
+
 7. 修改简历内容，直接编辑 `index.html` 文件。
 
 8. 如果要修改简历的样式，比如主题色、字体等等，需要编辑 `main.css` 文件。
@@ -45,16 +50,16 @@
 1. 项目部署前，需要先在 GitHub 仓库中建立一个名为 `username.github.io` 的仓库，其中 `username` 是你的 GitHub 账户名称。这个仓库可以生成一个域名，你可以在这个域名下创建仓库，将一些静态内容资源托管到上面，比如自己的博客。
 2. 回到项目目录，管理员身份运行命令行，先输入`npm install cross-env`再输入 `npm run pub` 命令，会自动创建一个 gh-pages 分支并推送到 GitHub 的仓库。
 3. 打开上面 Fork 的仓库地址，点击设置，滑动到 `GitHub Pages` 设置选项，将分支选择为 `gh-pages`。
-4. 然后打开生成的网页即可看到在线的简历，将链接发给其他人，其他人通过浏览器打开可以直接访问
+4. 然后打开生成的网页即可看到在线的简历，将链接发给其他人，其他人通过浏览器打开可以直接访问。
 5. 使用快捷键 `ctrl+p` 或者 `command+p` 调用浏览器的打印功能，可以将简历导出为 pdf 格式的文件。
 
 #### 2.2 云应用部署（云对象存储+域名解析）
 
 ###### 如果觉得同步太麻烦而且访问速度慢，不想使用GitHub pages。也可使用域名解析+云存储实现静态网页展示（我就是用的这种方式）
 
-###### 	以阿里云为例       
+###### 	以阿里云为例
 
-1. 项目部署前，需要先在阿里云购买一个OOS对象存储服务（一年九块钱真不贵），新建一个Bucket，设置为公共读私有写，别的额外收费的服务都不用开通。
+1. 项目部署前，需要先在[阿里云](https://www.aliyun.com/)购买一个OOS对象存储服务（一年九块钱真不贵），新建一个Bucket，设置为公共读私有写，别的额外收费的服务都不用开通。
 
 2. 左侧选项传输管理中选择域名管理，添加你自己的域名，去域名解析页面解析到这个bucket的外网地址，如果有SSL证书可以上传一下SSL证书绑定HTTPS页面（这样不提示不安全，更好看一点）
 
@@ -62,7 +67,7 @@
 
 4. 运行完成后，在项目目录会生成几个文件
 
-   ![image-20210311140641214](C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20210311140641214.png)
+   ![image-20210311140641214](https://cdn.jsdelivr.net/gh/ZhsKevin/cdn/projects/resume/10.png)
 
 5. 把这几个文件全部上传到bucket中去。
 
@@ -76,11 +81,15 @@
 
 ## **电脑端：**
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210220155720297.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poczI2MDEzMzE3Mg==,size_16,color_FFFFFF,t_70)
+图片预览：https://cdn.jsdelivr.net/gh/ZhsKevin/cdn/projects/resume/11.png
+
+![image-20210311140641214](https://cdn.jsdelivr.net/gh/ZhsKevin/cdn/projects/resume/13.png)
 
 ## **手机端：**
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210220160017450.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poczI2MDEzMzE3Mg==,size_16,color_FFFFFF,t_70)
+图片预览：https://cdn.jsdelivr.net/gh/ZhsKevin/cdn/projects/resume/12.png
+
+![image-20210311140641214](https://cdn.jsdelivr.net/gh/ZhsKevin/cdn/projects/resume/14.png)
 
 
 
@@ -92,14 +101,14 @@
 
 
 
-![ea92bc0663eb92fbeab04c50e7e78540.png](https://img-blog.csdnimg.cn/img_convert/ea92bc0663eb92fbeab04c50e7e78540.png)
+![ea92bc0663eb92fbeab04c50e7e78540.png](https://cdn.jsdelivr.net/gh/ZhsKevin/cdn/projects/resume/4.png)
 
 把新生成的项目用git clone 到本地，就可以开始在本地进行调试和开发了。
 （gir不会的可以去查一下git使用方法）
 
 
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210220160123817.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poczI2MDEzMzE3Mg==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/ZhsKevin/cdn/projects/resume/5.png)
 
 
 ### **安装依赖**
@@ -108,7 +117,7 @@
 
 安装好后，在命令行输入 `node -v`，如果出现相应的版本号，说明 Node 环境安装成功。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2021022016021349.png)
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/ZhsKevin/cdn/projects/resume/6.png)
 
 使用 `cd` 命令进入到项目目录，输入 `npm install` 命令，安装程序所使用的依赖环境。
 
@@ -135,7 +144,7 @@
 
 我们只需要对 `src/` 文件夹中的文件进行修改，其他文件是项目运行的一些配置文件。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210220160346388.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poczI2MDEzMzE3Mg==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/ZhsKevin/cdn/projects/resume/7.png)
 
 如果要修改简历内容，需要编辑 `index.html` 文件。如果你有前端的基础，这应该很好上手。
 
@@ -179,14 +188,14 @@ $theme-color: #126ab8;
 
 **替换webpack-dist.config.js文件里的yourwebsite.com为你自己的域名，并根据该文档配置你的域名解析 （这一步如果你没有自己的网页，则把这一行注释，这样系统生成的GitHubpages则默认设置为网址https://yourname.github.io/MyResume/ 这个域名也可以用但是太low了，建议个人主页去买一个域名，阿里云新人域名一年一块钱很方便）**
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210220161653630.png)
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/ZhsKevin/cdn/projects/resume/8.png)
 
 #### 1 页面托管部署（GitHubpages+域名解析）
 
 1. 项目部署前，需要先在 GitHub 仓库中建立一个名为 `username.github.io` 的仓库，其中 `username` 是你的 GitHub 账户名称。这个仓库可以生成一个域名，你可以在这个域名下创建仓库，将一些静态内容资源托管到上面，比如自己的博客。
 2. 回到项目输入 `npm run pub` 命令，会自动创建一个 gh-pages 分支并推送到你fork的 GitHub 的仓库。（如果有什么启动不了的错误是环境问题，可以尝试回到项目，在命令行中先输入`npm install cross-env`再输入 `npm run pub` 命令）
-3. 打开上面 Fork 的仓库地址，点击设置，往下滑动到 `GitHub Pages` 设置选项，将分支选择为 `gh-pages`。此时上面的网站就是我说的设置域名，如果你没有设置域名则这个地方应该是https://yourname.github.io/MyResume/ 
-   ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210220162159376.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poczI2MDEzMzE3Mg==,size_16,color_FFFFFF,t_70)
+3. 打开上面 Fork 的仓库地址，点击设置，往下滑动到 `GitHub Pages` 设置选项，将分支选择为 `gh-pages`。此时上面的网站就是我说的设置域名，如果你没有设置域名则这个地方应该是https://yourname.github.io/MyResume/
+   ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/ZhsKevin/cdn/projects/resume/9.png)
 4. 然后打开生成的网页即可看到在线的简历，将链接发给其他人，其他人通过浏览器打开可以直接访问
 5. 使用快捷键 `ctrl+p` 或者 `command+p` 调用浏览器的打印功能，可以将简历导出为 pdf 格式的文件。
 
@@ -194,7 +203,7 @@ $theme-color: #126ab8;
 
 ###### 如果觉得同步太麻烦而且访问速度慢，不想使用GitHub pages。也可使用域名解析+云存储实现静态网页展示（我就是用的这种方式）
 
-###### 	以阿里云为例       
+###### 	以阿里云为例
 
 1. 项目部署前，需要先在阿里云购买一个OOS对象存储服务（一年九块钱真不贵），新建一个Bucket，设置为公共读私有写，别的额外收费的服务都不用开通。
 
@@ -204,7 +213,7 @@ $theme-color: #126ab8;
 
 4. 运行完成后，在项目目录会生成几个文件
 
-   ![image-20210311140641214](C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20210311140641214.png)
+   ![image-20210311140641214](https://cdn.jsdelivr.net/gh/ZhsKevin/cdn/projects/resume/10.png)
 
 5. 把这几个文件全部上传到bucket中去。
 
@@ -216,6 +225,13 @@ $theme-color: #126ab8;
 
 
 
-
 希望大家都能找到满意的工作!
 =======
+
+电脑端：
+
+![image-20210311140641214](https://cdn.jsdelivr.net/gh/ZhsKevin/cdn/projects/resume/11.png)
+
+手机端：
+
+![image-20210311140641214](https://cdn.jsdelivr.net/gh/ZhsKevin/cdn/projects/resume/12.png)

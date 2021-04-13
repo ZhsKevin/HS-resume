@@ -19,7 +19,7 @@ body {
   -webkit-text-size-adjust: none;
   background-color: #eee;
   overflow: auto;
-  padding-top: 5px;
+  padding-top: 1px;
   @media screen and (max-width: 1024px) {
     padding-top: 0;
   }
@@ -33,12 +33,12 @@ a {
 
 .last-modified {
   position: absolute;
-  top: 30px;
+  top: 8px;
   left: 50%;
   width: 1000px;
   color: #bbb;
   margin-left: -500px;
-  font-size: 12px;
+  font-size: 15px;
   text-align: right;
   @media screen and (max-width: 1024px) {
     display: none;
@@ -50,7 +50,7 @@ a {
 
 .download-pdf {
   position: absolute;
-  top: 30px;
+  top: 10px;
   left: 50%;
   color: #bbb;
   margin-left: -500px;
@@ -80,7 +80,7 @@ a {
 
 .content-hd {
   width: 100%;
-  padding: 0px 50px;
+  padding: 0 50px;
   color: #fff;
   // background-color: $theme-color;
   overflow: hidden;
@@ -226,6 +226,7 @@ a {
   // .content-left {
   //   float: left;
   // }
+
   // .content-right {
   //   float: right;
   // }
@@ -237,6 +238,13 @@ a {
     position: relative;
     height: 32px;
     margin: 10px auto 5px;
+    overflow: hidden;
+  }
+  .section-hd-download {
+    position: relative;
+    height: 64px;
+    margin-top: 10px;
+    margin-bottom: 0;
     overflow: hidden;
   }
   .section-bd {
@@ -285,6 +293,19 @@ a {
     font-weight: bold;
     text-align: center;
     background-color: #eee;
+  }
+  .section-title-download {
+    position: relative;
+    z-index: 1;
+    width: 24%;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 5px 10px;
+    //@include border-radius(32px);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    //background-color: #d1d1d1;
   }
   .section-list {
     padding: 10px 0 5px;
@@ -408,15 +429,23 @@ figcaption {
 
 .github-footer {
   text-align: center;
-  font-size: 17px;
+  font-size: 80%;
 
   .footer-link {
     display: inline-block;
-    color: $color-gray;
-    margin-bottom: 25px;
+    color: 	#666;
+    margin-bottom: 10px;
     @media screen and (max-width: 1024px) {
-      margin-top: 25px;
+      margin-top: 15px;
+      margin-bottom: 0;
     }
+    .footer-link-img {
+      border-radius: 3px;
+      border: none;
+      margin: 5px auto;
+      display: inline;
+      float:left;
+      }
   }
 
   @media print {

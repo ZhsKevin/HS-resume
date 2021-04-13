@@ -96,7 +96,7 @@ module.exports = {
     }),
     new EndWebpackPlugin(async () => {
 
-      fs.writeFileSync(path.resolve(outputPath, 'CNAME'), 'yourwebsite.com');
+      fs.writeFileSync(path.resolve(outputPath, 'CNAME'), 'hshuai.xyz');
 
       await publishGhPages();
     }),
