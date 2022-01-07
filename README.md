@@ -22,7 +22,7 @@
 
 5. 项目的整体目录结构如下：
 
-            `├── README.md
+            ├── README.md
                 ├── node_modules
                 ├── package-lock.json
                 ├── package.json
