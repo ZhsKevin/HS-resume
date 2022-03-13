@@ -1,7 +1,8 @@
-# H&S简历
+<img src="https://cdn.jsdelivr.net/gh/ZhsKevin/cdn/img/Tot.png" alt="avatar" style="zoom: 10%; border-radius:50%;" />
 
+<h1><center><strong>H&S简历</strong></center></h1>
 
-## 一份优雅简约的在线简历
+<h3><center><strong>一份优雅简约的在线简历</strong></center></h3>
 
 - 优化构建，页面秒开无闪烁
 - 自适应屏幕兼容移动端
@@ -11,11 +12,11 @@
 
 - 提示：本项目如果npm用不了就使用阿里镜像源cnpm命令，具体方法百度即可
 
-### 1 项目简介：
+### 项目简介：
 
 ​	H&S简历是一个在线简历页面自动化生成项目，用户fork本项目后再使用Git工具Clone到本地修改后托管在GitHub pages或者阿里云等其他提供页面托管服务的平台上，实现生成个人在线简历的功能。
 
-### 2 特点：
+### 特点：
 
 - 简洁、雅观、大气
 - 优化结构构建，页面秒开无闪烁
@@ -34,7 +35,7 @@
 
 
 
-### 3 演示页面
+### 演示页面
 
 #### 电脑端：
 
