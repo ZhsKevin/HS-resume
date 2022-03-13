@@ -1,8 +1,7 @@
-<img src="https://cdn.jsdelivr.net/gh/ZhsKevin/cdn/img/Tot.png" alt="avatar" style="zoom: 10%; border-radius:50%;" />
+# H&S简历
 
-<h1><center><strong>H&S简历</strong></center></h1>
 
-<h3><center><strong>一份优雅简约的在线简历</strong></center></h3>
+## 一份优雅简约的在线简历
 
 - 优化构建，页面秒开无闪烁
 - 自适应屏幕兼容移动端
